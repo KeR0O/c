@@ -1,0 +1,34 @@
+import os,requests,time
+os.system("clear")
+R = '\033[1;31m'
+B = '\033[2;36m'
+G = '\033[1;32m'
+P = '\u001b[35m'
+Y = '\033[1;33m'
+W = "\033[0m"
+#Oh Are You Here To Change My Name Without Giving Me Credit 🖕
+logo=(f"""{R}=========InstaUp-Coin-Sender========
+{B}[+] TeleGram : @oeezz
+{G}[+] Youtube    : abas
+{Y}[+] TelegramNetwork  : @oeezz
+{R}====================================""")
+print(logo)
+userid = input(G+"Enter Your InstaUp UserId : ")
+def instaup():
+	url=f"https://plodding-lane.000webhostapp.com/salom.php?uid={userid}&submit=submit"
+	#Fuck You Dont Change My Api
+	namasteabhi=str(requests.get(url).text)
+	if '"status":"Successful"' in namasteabhi:
+		print(G+f'[✅]Successful Send 100 Follower To ==> {userid} ')
+		print(P+"[👑]Tool Made By ==> @oeezz ")
+	if 'coins":"' in namasteabhi:
+		coin=str(namasteabhi.split('coins":"')[1])
+		coins=str(coin.split('"')[0])
+		print(G+f'Coins Is ==> {coins}')
+	if '"coins":null' in namasteabhi:
+		print(B+"[🏴‍☠️]You Are Banned In InstaUp")
+while True:
+	print(Y+"Wait Few Second")
+	time.sleep(10)
+	instaup()
+	
